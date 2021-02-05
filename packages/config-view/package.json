@@ -1,0 +1,15 @@
+{
+  "name": "config-view",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Mrs Ma",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

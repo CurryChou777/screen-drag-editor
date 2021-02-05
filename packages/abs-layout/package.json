@@ -1,0 +1,19 @@
+{
+  "name": "screen-drag-editor",
+  "version": "0.1.2",
+  "description": "> TODO: description",
+  "author": "Mrs Ma",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.umd.min.js",
+  "files": [
+    "lib/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

@@ -1,0 +1,16 @@
+<!-- mousedown去掉了.stop  因为它影响了element-ui clickoutside的判断 或许会引发有其他问题 未知  -->
+<div class="vdr" :style="style"
+     :class="isActive ? 'active' : 'inactive'"
+     @mousedown="bodyDown($event)"
+     @touchstart="bodyDown($event)">
+    <slot></slot>
+    <div
+            v-for="stick in sticks"
+            class="vdr-stick"
+            :class="['vdr-stick-' + stick, isResizable ? '' : 'not-resizable']"
+            @mousedown.stop.prevent="stickDown(stick, $event)"
+            @touchstart.stop.prevent="stickDown(stick, $event)"
+            :style="vdrStick(stick)">
+    </div>
+
+</div>
